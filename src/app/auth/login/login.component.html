@@ -1,0 +1,22 @@
+    <div class="center_page w-full sm:w-96">
+        <div class="text-center">
+            <h1 class="text-white font-bold">Web <span class="text-yellow-500 font-bold text-3xl">BOSS</span> </h1>
+        </div>
+        <div class="flex flex-col gap-4 bg-yellow-200 p-5 ">
+            <div class="m-auto w-24 h-24 rounded-full bg-red-50 bg-cover bg-center bg-no-repeat" [ngStyle]="{'background-image':'url(assets/images/pic_login.jpg)'}">
+            </div>
+            <div class="flex flex-col">
+                <label for="txt_username">Username</label>
+                <input id="txt_username" type="text" pInputText>
+            </div>
+            <div class="flex flex-col">
+                <label for="txt_password">Password</label>
+                <p-password [style]="{'width':'100%'}" [inputStyle]="{'width':'100%'}" id="txt_password" [toggleMask]="true"></p-password>
+                <small id="txt_password-help" class="p-error">Password is not available.</small>
+            </div>
+            <div class="flex flex-col text-center">
+                <button pButton pRipple type="button" label="Login" (click)="login()"></button>
+                <small routerLink="/register" class="text-indigo-500 cursor-pointer">Register Now?</small>
+            </div>
+        </div>
+    </div>

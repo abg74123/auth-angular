@@ -3,22 +3,17 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
-import {InputTextModule} from 'primeng/inputtext';
-import {PasswordModule} from 'primeng/password';
 
-const primeNg = [
-  InputTextModule,
-  PasswordModule
-]
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ...primeNg
   ],
   providers: [],
   bootstrap: [AppComponent]
